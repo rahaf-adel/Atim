@@ -20,7 +20,7 @@ The inspiration came from a reality in which most recent graduates live, where t
 
 
 ## User Stories
-- Type of users: Admin, Universities, Companies, and Graduate Students , Employee.
+- Type of users: Admin, Universities, Companies, and Graduate Students.
 
 ### Admin
 
@@ -41,19 +41,35 @@ The inspiration came from a reality in which most recent graduates live, where t
 ### Companies
 
 - See graduate students information.
-- Add graduate students to company as employee .
-- Delete employees.
-- Edit employees information.
-- View employees information.
-- Search for a employees.
+- Send job offer for students.
 
 ### Graduate Students
 - View his information and status.
 - Accept or reject the job offer.
 
 
-### Employees
+### Models
+#University 
+  - Name 
+  - Description
+  
+#Company
+  - Name
+  - Description
 
-- View his information.
+#Student
+  - First name
+  - Last name
+  - Major
+  - GPA
+  - Gradute Date
+  - job offer
+  
+#Job_Offer
+  - Company name 
+  - job offer
+
+
+
 
 
