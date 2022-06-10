@@ -52,10 +52,14 @@ The inspiration came from a reality in which most recent graduates live, where t
 #University 
   - Name 
   - Description
+  - City
+  - User
   
 #Company
   - Name
   - Description
+  - City
+  - User
 
 #Student
   - First name
@@ -63,12 +67,16 @@ The inspiration came from a reality in which most recent graduates live, where t
   - Major
   - GPA
   - Gradute Date
-  - job offer
-  
-#Job_Offer
-  - Company name 
-  - job offer
+  - University
+  - User
 
+
+#Job_Offer
+  - Name 
+  - Description
+  - Company
+  - Student 
+  - isAccepted #boolean
 
 
 
