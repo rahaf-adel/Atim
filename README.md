@@ -16,7 +16,6 @@ The inspiration came from a reality in which most recent graduates live, where t
 - Manage universities . 
 - Manage companies . 
 - Manage the graduate students.
-- Manage the employees.
 
 
 ## User Stories
@@ -27,7 +26,7 @@ The inspiration came from a reality in which most recent graduates live, where t
 - Create, Read, Update, Delete Universities. 
 - Create, Read, Update, Delete Companies. 
 - Create, Read, Update, Delete Graduate students.
-- Create, Read, Update, Delete Employees.
+- Create, Read, Update, Delete Job offer.
 
 ### Universities
 
@@ -36,7 +35,7 @@ The inspiration came from a reality in which most recent graduates live, where t
 - Edit graduate students information.
 - Delete graduate students from the system.
 - View graduate students information.
-- Search for graduate students.
+- Search for graduate students by Major.
 
 ### Companies
 
