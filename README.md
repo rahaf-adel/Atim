@@ -31,12 +31,15 @@ The inspiration came from a reality in which most recent graduates live, where t
 
 ### Universities staff
 •	Add university to the system.
-•	Edit university to the system.
-•	Delete university to the system.
+•	Edit university.
+•	Delete university.
 •	View student information by university.
 •	View student status by university.
 
 ### Companies staff
+•	Add company to the system.
+•	Edit company.
+•	Delete company.
 •	See graduate students information.
 •	Send job offer for students.
 
@@ -68,6 +71,7 @@ The inspiration came from a reality in which most recent graduates live, where t
 #Student
   - First name
   - Last name
+  - email
   - Major
   - GPA
   - Gradute Date
