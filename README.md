@@ -28,23 +28,28 @@ The inspiration came from a reality in which most recent graduates live, where t
 - Create, Read, Update, Delete Graduate students.
 - Create, Read, Update, Delete Job offer.
 
-### Universities
 
-- View students statu .
-- Add graduate students to the system.
-- Edit graduate students information.
-- Delete graduate students from the system.
-- View graduate students information.
-- Search for graduate students by Major.
+### Universities staff
+•	Add university to the system.
+•	Edit university to the system.
+•	Delete university to the system.
+•	View student information by university.
+•	View student status by university.
 
-### Companies
+### Companies staff
+•	See graduate students information.
+•	Send job offer for students.
 
-- See graduate students information.
-- Send job offer for students.
+### Graduate Students Staff
+•	Add graduate students to the system.
+•	Edit graduate students information.
+•	Delete graduate students from the system.
+•	View all the information of graduate students who added them.
+•	Search for graduate students by Major.
 
-### Graduate Students
-- View his information and status.
-- Accept or reject the job offer.
+### Students
+•	View his information and status.
+•	Accept or reject the job offer.
 
 
 ### Models
