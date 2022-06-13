@@ -363,7 +363,8 @@ def update_student_profile(request: Request, offer_id):
         return Response({"msg": "Not Allowed"}, status=status.HTTP_401_UNAUTHORIZED)
 
     if Graduete_Students.objects.filter(email=request.user.email).exists():
-        request.data["student"] = request.user.id
+        student = Graduete_Students.objects.get(email=request.user.email)
+        request.data["student"] = student.id
         offer = Job_Offer.objects.get(id=offer_id)
         updated_job_offer = Job_OfferSerializer(instance=offer, data=request.data)
         if updated_job_offer.is_valid():
