@@ -1,0 +1,776 @@
+{
+	"info": {
+		"_postman_id": "7bc0c68a-c477-4ec0-a0d9-02d64d0c1536",
+		"name": "Atim Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"Shahad\",\r\n    \"email\" : \"Shahad1@gmail.com\",\r\n    \"password\" : \"SD1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"Osama\",\r\n    \"password\" : \"OS1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "University",
+			"item": [
+				{
+					"name": "delete_university",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU0NzkyMTA4LCJpYXQiOjE2NTQ3OTE4MDgsImp0aSI6Ijg3Njk1NTFkMTRjMTQ1M2ZiYTY4NjQwZTEwM2YxYjFjIiwidXNlcl9pZCI6Mn0.DI3c9TS_Kpm0LMW2Tkxeigu1Amf02VOI9AC9Y52WxmM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/delete_university/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"delete_university",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_university",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0MDIzLCJpYXQiOjE2NTUxMDIwMjMsImp0aSI6Ijg0YzcxZjQzODEyYTRiMTRhNzFhMjAxOTlkZjA3ZWEzIiwidXNlcl9pZCI6MTF9.y_R580DzkgOHCi3Kn9r9qSyCNl2DkdDf1QHCXSYBnFc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n   \"name\" : \"King Abdullah University\",\r\n    \"description\" :\"This is King Abdullah University.\",\r\n    \"city\" : \"Jeddah\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/update_university/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"update_university",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_university",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0MDIzLCJpYXQiOjE2NTUxMDIwMjMsImp0aSI6Ijg0YzcxZjQzODEyYTRiMTRhNzFhMjAxOTlkZjA3ZWEzIiwidXNlcl9pZCI6MTF9.y_R580DzkgOHCi3Kn9r9qSyCNl2DkdDf1QHCXSYBnFc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"King Abdullah University\",\r\n    \"description\" :\"This is King Abdullah University ......\",\r\n    \"city\" : \"Jeddah\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/add_university",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"add_university"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "graduate_status_by_university",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0MDIzLCJpYXQiOjE2NTUxMDIwMjMsImp0aSI6Ijg0YzcxZjQzODEyYTRiMTRhNzFhMjAxOTlkZjA3ZWEzIiwidXNlcl9pZCI6MTF9.y_R580DzkgOHCi3Kn9r9qSyCNl2DkdDf1QHCXSYBnFc",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/graduate_status_by_university/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"graduate_status_by_university",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "graduate_student_info_by_university",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM2OTE4LCJpYXQiOjE2NTUxMDQ5MTgsImp0aSI6ImE2NGE5MzlhNWM2MDQ3ZDg5MTg5MjE1YmNmMTY4ZTFiIiwidXNlcl9pZCI6MTR9.g2HGjoiB1LjgfcIWVYh9vVt1t4lNGE6O6c-DmoQHE3g",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/graduate_student_info_by_university",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"graduate_student_info_by_university"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "add_company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0NTU4LCJpYXQiOjE2NTUxMDI1NTgsImp0aSI6ImRiYzEwNTgyZTQ2MjQwNWU4OWUxZTU3Y2M5MWU3NWJmIiwidXNlcl9pZCI6MTJ9.uzCOt4MR_L-V-MdLhhH5XEACc9rKHR2rN7OeatL_Txs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"name\" : \"King Abdullah Hospital\",\r\n    \"description\" : \" King Abdullah Forces Hospital seeks providing the finest medical services, looking,\",\r\n    \"city\" : \"Jeddah\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/add_company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"add_company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_company",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0NTU4LCJpYXQiOjE2NTUxMDI1NTgsImp0aSI6ImRiYzEwNTgyZTQ2MjQwNWU4OWUxZTU3Y2M5MWU3NWJmIiwidXNlcl9pZCI6MTJ9.uzCOt4MR_L-V-MdLhhH5XEACc9rKHR2rN7OeatL_Txs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"name\" : \"King Fahad Hospital\",\r\n    \"description\" : \" King Fahd Armed Forces Hospital seeks providing the finest medical services, looking,..............\",\r\n    \"city\" : \"Jeddah\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/update_company/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"update_company",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_company",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU0ODQ4ODEyLCJpYXQiOjE2NTQ4NDg1MTIsImp0aSI6IjMxOGExNDUxZDdhOTQyYWJhNTA3NTZmMTY3MmRiOTFkIiwidXNlcl9pZCI6N30.tKGeEH_Mb_HzIiuafFl6KqKQL_U4HPNQIYoT0fsjI7I",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"name\" : \"Aramco\",\r\n    \"description\" :\"This is a oil company ..........\",\r\n    \"city\" : \"Jeddah\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/delete_company/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"delete_company",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display_all_graduate_student",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NDY4MjMwLCJpYXQiOjE2NTUwMzYyMzAsImp0aSI6Ijk4OTViNmRjYjg1YzQ1MTg4ZTVjMDIyNTM1MjBhMzUyIiwidXNlcl9pZCI6M30.KSqDLz1oMbvCu9JtjucfuZV0ZEMwrPlLqN_26sTL1Ok",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/display_all_graduate_student",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"display_all_graduate_student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_job_offer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM1ODg3LCJpYXQiOjE2NTUxMDM4ODcsImp0aSI6IjcwYzgzZTEzZDU5ZDQyNjI4Y2E0ZDYxZmVjNmE4OWRmIiwidXNlcl9pZCI6MTJ9.dV4vAQenzv_c6fIpKSNDZskAKuH7a_VMBoD98CRmp_Q",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Doctor\",\r\n    \"description\" : \"In this job you will be …\",\r\n    \"company\" : 3,\r\n    \"student\" : 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/add_job_offer",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"add_job_offer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Graduate Student",
+			"item": [
+				{
+					"name": "add_graduate_student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0OTU5LCJpYXQiOjE2NTUxMDI5NTksImp0aSI6IjdlOWUwMGMyYWQyZTQ0NDhhOTRhZTQ1NzAyODQyZGIxIiwidXNlcl9pZCI6MTN9.xc3Nzv9omcQyjrZ7PVNZ2YdJsjfMrlB4vT95KVxcl4A",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"Shahad\",\r\n    \"last_name\" : \"Ahmad\",\r\n    \"email\": \"Shahad1@gmail.com\",\r\n    \"major\" : \"Doctor\",\r\n    \"GPA\" : \"4.1\" ,\r\n    \"graduete_date\" : \"2019-11-22\",\r\n    \"university\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/add_graduate_student",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"add_graduate_student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_graduate_student",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0OTU5LCJpYXQiOjE2NTUxMDI5NTksImp0aSI6IjdlOWUwMGMyYWQyZTQ0NDhhOTRhZTQ1NzAyODQyZGIxIiwidXNlcl9pZCI6MTN9.xc3Nzv9omcQyjrZ7PVNZ2YdJsjfMrlB4vT95KVxcl4A",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"Shahad\",\r\n    \"last_name\" : \"Ahmad\",\r\n    \"email\": \"Shahad1@gmail.com\",\r\n    \"major\" : \"Doctor\",\r\n    \"GPA\" : \"4.0\" ,\r\n    \"graduete_date\" : \"2019-11-22\",\r\n    \"university\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/update_graduate_student/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"update_graduate_student",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_graduate_student",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU0OTYwOTg0LCJpYXQiOjE2NTQ5NjA2ODQsImp0aSI6ImIwYzFkMzQ3NjVhMDQyOWQ5MzUyZGUxYmYyMTc5MzVjIiwidXNlcl9pZCI6NH0.kiFz76zUWeLVFeJd5_pEewSqBfSUH7RHmehiKtOttew",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/delete_graduate_student/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"delete_graduate_student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display_graduate_student",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM0OTU5LCJpYXQiOjE2NTUxMDI5NTksImp0aSI6IjdlOWUwMGMyYWQyZTQ0NDhhOTRhZTQ1NzAyODQyZGIxIiwidXNlcl9pZCI6MTN9.xc3Nzv9omcQyjrZ7PVNZ2YdJsjfMrlB4vT95KVxcl4A",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/display_graduate_student",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"display_graduate_student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search_by_major",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/Search_by_major/Doctor",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"Search_by_major",
+								"Doctor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "student_profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM4NDU0LCJpYXQiOjE2NTUxMDY0NTQsImp0aSI6Ijk4MGM0OGJiNmIwNzRkOWFiY2UwNDY4N2JhZTY3MTA1IiwidXNlcl9pZCI6Nn0.MS5LH1hwlffM6Cu8hktMF5vdpOgM1HFnawrgMlzQlSI",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/student_profile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"student_profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_student_profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NDg2ODAwLCJpYXQiOjE2NTUwNTQ4MDAsImp0aSI6IjEwZWRjYzI2YjNlZDQ3ZjJiODFjZjQyYzgxZWMxNjg4IiwidXNlcl9pZCI6Nn0.hqQws_BemeRudUafng3moGVup02kqDABk6rpeQ3Zu4M",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Doctor\",\r\n    \"description\" : \"In this job you will be …\",\r\n    \"company\" : 2,\r\n    \"isAccepted\" : true\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/update_student_profile/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"update_student_profile",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "display All",
+			"item": [
+				{
+					"name": "display_graduate_student_status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU0OTQ2MjQ1LCJpYXQiOjE2NTQ5NDU5NDUsImp0aSI6IjM2NzdjM2IwODRmYTQ0YmQ4M2JiZjRiYWZjYzExNjk5IiwidXNlcl9pZCI6NH0.qonNtUncgSWvPd6ei8DMpAkbK-McvuyvtTWr50sk7vs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/display_graduate_student_status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"display_graduate_student_status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display_companies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/display_company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"display_company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display_company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Atim/display_company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Atim",
+								"display_company"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
