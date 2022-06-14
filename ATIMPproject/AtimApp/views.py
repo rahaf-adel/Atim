@@ -345,7 +345,7 @@ def student_profile(request: Request):
             data = {
                 'msg': 'Display All Graduate Students',
                 'Graduate': Graduete_StudentsSerializer(instance=student_info1, many=True).data,
-                'job_offer': "This job offer is not intended for you"
+                'job_offer': "This student has not job offer"
             }
     else:
         data = {
